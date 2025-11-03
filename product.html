@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKA Transformers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+    }
+
+    nav.navbar {
+      background: #fff;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: #001f3f;
+    }
+
+    .navbar-nav .nav-link {
+      color: #333;
+      margin-right: 15px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #0056b3;
+    }
+
+    h2.section-title {
+      font-weight: 700;
+      text-align: center;
+      margin: 60px 0 30px 0;
+    }
+
+    .product-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .details-section {
+      margin-top: 80px;
+    }
+
+    .details-section img {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+    }
+
+    .spec-table td {
+      vertical-align: middle;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 30px 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #555;
+    }
+
+    footer a:hover {
+      color: #000;
+    }
+
+    .btn-dark {
+      background-color: #001f3f;
+      border: none;
+    }
+
+    .btn-dark:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SKA Transformers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="PROJECT.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="technology.html">Technology</a></li>
+          <li class="nav-item"><a class="nav-link" href="resource.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="btn btn-outline-dark ms-3">Request a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Range -->
+  <div class="container">
+    <h2 class="section-title">Our Transformer Product Range</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-6">
+        <div class="card product-card">
+          <img src="/images/powertransformers.png" class="card-img-top" alt="Power Transformers">
+          <div class="card-body">
+            <h5 class="card-title">Power Transformers</h5>
+            <p class="card-text">Designed for high-voltage power transmission and distribution networks, ensuring maximum efficiency and reliability across the grid.</p>
+            <a href="#" class="btn btn-outline-dark btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="card product-card">
+          <img src="/images/powertransformers.png" class="card-img-top" alt="Distribution Transformers">
+          <div class="card-body">
+            <h5 class="card-title">Distribution Transformers</h5>
+            <p class="card-text">Essential for stepping down voltage for end-user consumption, optimizing power delivery to commercial, industrial, and residential areas.</p>
+            <a href="#" class="btn btn-outline-dark btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="card product-card">
+          <img src="/images/powertransformers.png" class="card-img-top" alt="Dry Type Transformers">
+          <div class="card-body">
+            <h5 class="card-title">Dry Type Transformers</h5>
+            <p class="card-text">Environmentally friendly and safer, ideal for indoor applications like data centers, hospitals, and commercial buildings due to no liquid coolant.</p>
+            <a href="#" class="btn btn-outline-dark btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="card product-card">
+          <img src="/images/powertransformers.png" class="card-img-top" alt="Special Transformers">
+          <div class="card-body">
+            <h5 class="card-title">Special Transformers</h5>
+            <p class="card-text">Custom-engineered solutions for unique applications, including furnace, traction, and rectifier transformers tailored to client needs.</p>
+            <a href="#" class="btn btn-outline-dark btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Overview -->
+  <div class="container details-section">
+    <h2 class="section-title">Power Transformers: Detailed Overview</h2>
+    <img src="/images/powertransformers.png" alt="Transformer Overview" class="mb-5">
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <h5><b>Key Specifications</b></h5>
+        <table class="table table-bordered spec-table">
+          <tbody>
+            <tr><td>Voltage Class</td><td>Up to 765 kV</td></tr>
+            <tr><td>Power Rating</td><td>Up to 1200 MVA</td></tr>
+            <tr><td>Cooling Type</td><td>ONAN, ONAF, OFAF, ODAF</td></tr>
+            <tr><td>Standards</td><td>ANSI, IEC, GOST, BS</td></tr>
+            <tr><td>Applications</td><td>Grid substations, Generation plants</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6">
+        <h5><b>Applications</b></h5>
+        <ul>
+          <li>Grid Substations: Transmitting power over long distances.</li>
+          <li>Industrial Power Distribution: Heavy industrial use.</li>
+          <li>Renewable Integration: Wind & solar farms to the grid.</li>
+          <li>Data Centers: Stable power for critical operations.</li>
+        </ul>
+
+        <h5 class="mt-4"><b>Benefits</b></h5>
+        <ul>
+          <li>High Efficiency: Minimizes energy loss.</li>
+          <li>Robust Design: Withstands harsh conditions.</li>
+          <li>Low Maintenance: Long operational lifecycle.</li>
+          <li>Customizable: Tailored to client requirements.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-4 text-center">
+      <a href="#" class="btn btn-dark me-2">Download PDF Datasheet</a>
+      <a href="#" class="btn btn-outline-dark">Request a Quote</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5">
+    <div class="container">
+      <p>Company | Quick Links | Contact | Legal</p>
+    
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
