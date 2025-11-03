@@ -1,333 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Projects |SKA Transformers</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Projects |SKA Transformers Pvt Ltd</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #222;
-      background-color: #fff;
-    }
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #222;
+        background-color: #fff;
+      }
 
-    /* Navbar */
-    nav.navbar {
-      background: #fff;
-      border-bottom: 1px solid #eaeaea;
-    }
+      /* Navbar */
+      nav.navbar {
+        background: #fff;
+        border-bottom: 1px solid #eaeaea;
+      }
 
-    .navbar-brand {
-      font-weight: 700;
-      color: #001f3f;
-    }
+      .navbar-brand {
+        font-weight: 700;
+        color: #001f3f;
+      }
 
-    .navbar-nav .nav-link {
-      color: #333;
-      margin-right: 15px;
-    }
+      .navbar-nav .nav-link {
+        color: #333;
+        margin-right: 15px;
+      }
 
-    .navbar-nav .nav-link:hover {
-      color: #0056b3;
-    }
+      .navbar-nav .nav-link:hover {
+        color: #0056b3;
+      }
 
-    /* Header Section */
-    .header-section {
-      background-color: #f1f7fc;
-      text-align: center;
-      padding: 80px 20px;
-    }
+      /* Header Section */
+      .header-section {
+        background-color: #f1f7fc;
+        text-align: center;
+        padding: 80px 20px;
+      }
 
-    .header-section h1 {
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
+      .header-section h1 {
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
 
-    .header-section p {
-      font-size: 1.1rem;
-      color: #444;
-      max-width: 700px;
-      margin: auto;
-    }
+      .header-section p {
+        font-size: 1.1rem;
+        color: #444;
+        max-width: 700px;
+        margin: auto;
+      }
 
-    /* Project Cards */
-    .project-card {
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
+      /* Project Cards */
+      .project-card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
 
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
 
-    .project-card img {
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      height: 200px;
-      object-fit: cover;
-    }
+      .project-card img {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        height: 200px;
+        object-fit: cover;
+      }
 
-    .project-card .card-body {
-      padding: 20px;
-    }
+      .project-card .card-body {
+        padding: 20px;
+      }
 
-    .project-card h5 {
-      font-weight: 600;
-    }
+      .project-card h5 {
+        font-weight: 600;
+      }
 
-    .project-card p {
-      font-size: 0.95rem;
-      color: #555;
-    }
+      .project-card p {
+        font-size: 0.95rem;
+        color: #555;
+      }
 
-    .project-card .btn {
-      font-size: 0.9rem;
-      border-radius: 6px;
-    }
+      .project-card .btn {
+        font-size: 0.9rem;
+        border-radius: 6px;
+      }
 
-    /* CTA Section */
-    .cta-section {
-      background-color: #001f3f;
-      color: #fff;
-      text-align: center;
-      padding: 60px 20px;
-      margin-top: 80px;
-    }
+      /* CTA Section */
+      .cta-section {
+        background-color: #001f3f;
+        color: #fff;
+        text-align: center;
+        padding: 60px 20px;
+        margin-top: 80px;
+      }
 
-    .cta-section h3 {
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
+      .cta-section h3 {
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
 
-    .cta-section p {
-      font-size: 1.05rem;
-      color: #ddd;
-      margin-bottom: 25px;
-    }
+      .cta-section p {
+        font-size: 1.05rem;
+        color: #ddd;
+        margin-bottom: 25px;
+      }
 
-    .cta-section .btn {
-      background-color: #fff;
-      color: #001f3f;
-      font-weight: 600;
-      padding: 10px 25px;
-      border-radius: 6px;
-    }
+      .cta-section .btn {
+        background-color: #fff;
+        color: #001f3f;
+        font-weight: 600;
+        padding: 10px 25px;
+        border-radius: 6px;
+      }
 
-    .cta-section .btn:hover {
-      background-color: #e6e6e6;
-    }
+      .cta-section .btn:hover {
+        background-color: #e6e6e6;
+      }
 
-    /* Testimonials */
-    .testimonials {
-      background-color: #fff;
-      padding: 80px 0;
-    }
+      /* Testimonials */
+      .testimonials {
+        background-color: #fff;
+        padding: 80px 0;
+      }
 
-    .testimonial-card {
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 30px;
-      height: 100%;
-    }
+      .testimonial-card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        height: 100%;
+      }
 
-    .testimonial-card p {
-      font-style: italic;
-      color: #444;
-    }
+      .testimonial-card p {
+        font-style: italic;
+        color: #444;
+      }
 
-    .testimonial-card .name {
-      margin-top: 20px;
-      font-weight: 600;
-      color: #000;
-    }
+      .testimonial-card .name {
+        margin-top: 20px;
+        font-weight: 600;
+        color: #000;
+      }
 
-    /* Footer */
-    footer {
-      border-top: 1px solid #ddd;
-      padding: 30px 0;
-      font-size: 0.9rem;
-      color: #555;
-    }
+      /* Footer */
+      footer {
+        border-top: 1px solid #ddd;
+        padding: 30px 0;
+        font-size: 0.9rem;
+        color: #555;
+      }
 
-    footer a {
-      text-decoration: none;
-      color: #555;
-    }
+      footer a {
+        text-decoration: none;
+        color: #555;
+      }
 
-    footer a:hover {
-      color: #000;
-    }
-
-  </style>
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">SKA Transformers</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link active" href="PROJECT.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="technology.html">Technology</a></li>
-          <li class="nav-item"><a class="nav-link" href="resource.html">Resources</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-        <a href="#" class="btn btn-outline-dark ms-3">Request a Quote</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <section class="header-section">
-    <h1>Our Success Stories: Pioneering Industrial Solutions</h1>
-    <p>Explore our portfolio of successful projects showcasing how XYZ Transformer Company delivers innovative, reliable, and high-performance transformer solutions for diverse industries.</p>
-  </section>
-
-  <!-- Projects -->
-  <div class="container mt-5">
-    <h2 class="text-center mb-4 fw-bold">Featured Projects</h2>
-    <div class="row g-4">
-      <!-- Project 1 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <img src="/images/powertransformers.png" class="card-img-top" alt="MegaGrid Power Upgrade">
-          <div class="card-body">
-            <h5>MegaGrid Power Upgrade</h5>
-            <p><b>Challenge:</b> Modernize aging infrastructure for increased urban load.</p>
-            <p><b>Solution:</b> Installed high-capacity transformers for stable distribution.</p>
-            <p><b>Outcome:</b> <span class="badge bg-secondary">50% increase in efficiency</span></p>
-            <a href="#" class="btn btn-outline-dark btn-sm">View Case Study</a>
-          </div>
+      footer a:hover {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">SKA Transformers Pvt Ltd</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="PROJECT.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="technology.html">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resource.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-outline-dark ms-3">Request a Quote</a>
         </div>
       </div>
-      <!-- Project 2 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <img src="/images/powertransformers.png" class="card-img-top" alt="Desert Wind Farm Integration">
-          <div class="card-body">
-            <h5>Desert Wind Farm Integration</h5>
-            <p><b>Challenge:</b> Connect remote wind farm to national grid efficiently.</p>
-            <p><b>Solution:</b> Developed specialized step-up transformers.</p>
-            <p><b>Outcome:</b> <span class="badge bg-secondary">Seamless renewable integration</span></p>
-            <a href="#" class="btn btn-outline-dark btn-sm">View Case Study</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <img src="/images/powertransformers.png" class="card-img-top" alt="Industrial Plant Electrification">
-          <div class="card-body">
-            <h5>Industrial Plant Electrification</h5>
-            <p><b>Challenge:</b> Ensure stable power for heavy industrial use.</p>
-            <p><b>Solution:</b> Installed a fleet of dry-type transformers.</p>
-            <p><b>Outcome:</b> <span class="badge bg-secondary">20% downtime reduction</span></p>
-            <a href="#" class="btn btn-outline-dark btn-sm">View Case Study</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 4 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <img src="/images/powertransformers.png" class="card-img-top" alt="Offshore Platform Power Solution">
-          <div class="card-body">
-            <h5>Offshore Platform Power Solution</h5>
-            <p><b>Challenge:</b> Deliver reliable power in marine environments.</p>
-            <p><b>Solution:</b> Engineered corrosion-resistant, efficient transformers.</p>
-            <p><b>Outcome:</b> <span class="badge bg-secondary">Uninterrupted power reliability</span></p>
-            <a href="#" class="btn btn-outline-dark btn-sm">View Case Study</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 5 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <img src="/images/powertransformers.png" class="card-img-top" alt="Smart City Grid Optimization">
-          <div class="card-body">
-            <h5>Smart City Grid Optimization</h5>
-            <p><b>Challenge:</b> Reduce losses in urban grids.</p>
-            <p><b>Solution:</b> Implemented smart transformers with monitoring.</p>
-            <p><b>Outcome:</b> <span class="badge bg-secondary">15% reduction in energy waste</span></p>
-            <a href="#" class="btn btn-outline-dark btn-sm">View Case Study</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 6 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <img src="/images/powertransformers.png" class="card-img-top" alt="Data Center Expansion">
-          <div class="card-body">
-            <h5>Data Center Expansion</h5>
-            <p><b>Challenge:</b> Provide scalable power for a growing data center.</p>
-            <p><b>Solution:</b> Installed modular high-efficiency transformers.</p>
-            <p><b>Outcome:</b> <span class="badge bg-secondary">Higher IT power reliability</span></p>
-            <a href="#" class="btn btn-outline-dark btn-sm">View Case Study</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </nav>
 
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <h3>Ready to Transform Your Operations?</h3>
-    <p>Partner with XYZ Transformer Company for robust, efficient, and custom-engineered power solutions. Let’s discuss your next project.</p>
-    <a href="#" class="btn">Request a Quote Today</a>
-  </section>
+    <!-- Header -->
+    <section class="header-section">
+      <h1>Our Success Stories: Pioneering Industrial Solutions</h1>
+      <p>
+        Explore our portfolio of successful projects showcasing how XYZ
+        Transformer Company delivers innovative, reliable, and high-performance
+        transformer solutions for diverse industries.
+      </p>
+    </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-5">What Our Clients Say</h2>
+    <!-- Projects -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4 fw-bold">Featured Projects</h2>
       <div class="row g-4">
-        <div class="col-md-6 col-lg-6">
-          <div class="testimonial-card">
-            <p>“XYZ Transformer Company delivered an exceptional solution for our grid upgrade. Their custom transformers integrated seamlessly and boosted capacity significantly.”</p>
-            <div class="name">Eleanor Vance<br><small>Chief Operations Officer, PowerGrid Solutions</small></div>
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img
+              src="/images/powertransformers.png"
+              class="card-img-top"
+              alt="MegaGrid Power Upgrade"
+            />
+            <div class="card-body">
+              <h5>MegaGrid Power Upgrade</h5>
+              <p>
+                <b>Challenge:</b> Modernize aging infrastructure for increased
+                urban load.
+              </p>
+              <p>
+                <b>Solution:</b> Installed high-capacity transformers for stable
+                distribution.
+              </p>
+              <p>
+                <b>Outcome:</b>
+                <span class="badge bg-secondary"
+                  >50% increase in efficiency</span
+                >
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                >View Case Study</a
+              >
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6">
-          <div class="testimonial-card">
-            <p>“We partnered with XYZ for our offshore platform, and their specialized transformers withstood harsh marine conditions flawlessly.”</p>
-            <div class="name">Marcus Thorne<br><small>Project Director, Oceanic Energy Corp.</small></div>
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img
+              src="/images/powertransformers.png"
+              class="card-img-top"
+              alt="Desert Wind Farm Integration"
+            />
+            <div class="card-body">
+              <h5>Desert Wind Farm Integration</h5>
+              <p>
+                <b>Challenge:</b> Connect remote wind farm to national grid
+                efficiently.
+              </p>
+              <p>
+                <b>Solution:</b> Developed specialized step-up transformers.
+              </p>
+              <p>
+                <b>Outcome:</b>
+                <span class="badge bg-secondary"
+                  >Seamless renewable integration</span
+                >
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                >View Case Study</a
+              >
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6">
-          <div class="testimonial-card">
-            <p>“The dry-type transformers from XYZ revolutionized power distribution in our plant. We’ve seen noticeable improvement in stability and safety.”</p>
-            <div class="name">Sophia Chen<br><small>Head of Engineering, Apex Manufacturing</small></div>
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img
+              src="/images/powertransformers.png"
+              class="card-img-top"
+              alt="Industrial Plant Electrification"
+            />
+            <div class="card-body">
+              <h5>Industrial Plant Electrification</h5>
+              <p>
+                <b>Challenge:</b> Ensure stable power for heavy industrial use.
+              </p>
+              <p>
+                <b>Solution:</b> Installed a fleet of dry-type transformers.
+              </p>
+              <p>
+                <b>Outcome:</b>
+                <span class="badge bg-secondary">20% downtime reduction</span>
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                >View Case Study</a
+              >
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6">
-          <div class="testimonial-card">
-            <p>“For our smart city initiative, XYZ’s transformers were key. Integration was smooth, and energy savings exceeded our expectations.”</p>
-            <div class="name">David Kim<br><small>Director of Urban Planning, MetroGreen Initiative</small></div>
+        <!-- Project 4 -->
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img
+              src="/images/powertransformers.png"
+              class="card-img-top"
+              alt="Offshore Platform Power Solution"
+            />
+            <div class="card-body">
+              <h5>Offshore Platform Power Solution</h5>
+              <p>
+                <b>Challenge:</b> Deliver reliable power in marine environments.
+              </p>
+              <p>
+                <b>Solution:</b> Engineered corrosion-resistant, efficient
+                transformers.
+              </p>
+              <p>
+                <b>Outcome:</b>
+                <span class="badge bg-secondary"
+                  >Uninterrupted power reliability</span
+                >
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                >View Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img
+              src="/images/powertransformers.png"
+              class="card-img-top"
+              alt="Smart City Grid Optimization"
+            />
+            <div class="card-body">
+              <h5>Smart City Grid Optimization</h5>
+              <p><b>Challenge:</b> Reduce losses in urban grids.</p>
+              <p>
+                <b>Solution:</b> Implemented smart transformers with monitoring.
+              </p>
+              <p>
+                <b>Outcome:</b>
+                <span class="badge bg-secondary"
+                  >15% reduction in energy waste</span
+                >
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                >View Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img
+              src="/images/powertransformers.png"
+              class="card-img-top"
+              alt="Data Center Expansion"
+            />
+            <div class="card-body">
+              <h5>Data Center Expansion</h5>
+              <p>
+                <b>Challenge:</b> Provide scalable power for a growing data
+                center.
+              </p>
+              <p>
+                <b>Solution:</b> Installed modular high-efficiency transformers.
+              </p>
+              <p>
+                <b>Outcome:</b>
+                <span class="badge bg-secondary"
+                  >Higher IT power reliability</span
+                >
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-sm"
+                >View Case Study</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="container">
-      <p>Company | Quick Links | Contact | Legal</p>
-    
-    </div>
-  </footer>
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <h3>Ready to Transform Your Operations?</h3>
+      <p>
+        Partner with XYZ Transformer Company for robust, efficient, and
+        custom-engineered power solutions. Let’s discuss your next project.
+      </p>
+      <a href="#" class="btn">Request a Quote Today</a>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">What Our Clients Say</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-6">
+            <div class="testimonial-card">
+              <p>
+                “XYZ Transformer Company delivered an exceptional solution for
+                our grid upgrade. Their custom transformers integrated
+                seamlessly and boosted capacity significantly.”
+              </p>
+              <div class="name">
+                Eleanor Vance<br /><small
+                  >Chief Operations Officer, PowerGrid Solutions</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="testimonial-card">
+              <p>
+                “We partnered with XYZ for our offshore platform, and their
+                specialized transformers withstood harsh marine conditions
+                flawlessly.”
+              </p>
+              <div class="name">
+                Marcus Thorne<br /><small
+                  >Project Director, Oceanic Energy Corp.</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="testimonial-card">
+              <p>
+                “The dry-type transformers from XYZ revolutionized power
+                distribution in our plant. We’ve seen noticeable improvement in
+                stability and safety.”
+              </p>
+              <div class="name">
+                Sophia Chen<br /><small
+                  >Head of Engineering, Apex Manufacturing</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="testimonial-card">
+              <p>
+                “For our smart city initiative, XYZ’s transformers were key.
+                Integration was smooth, and energy savings exceeded our
+                expectations.”
+              </p>
+              <div class="name">
+                David Kim<br /><small
+                  >Director of Urban Planning, MetroGreen Initiative</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container">
+        <p>Company | Quick Links | Contact | Legal</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
